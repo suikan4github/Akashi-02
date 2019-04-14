@@ -21,6 +21,7 @@ Record of the modification in project development.
 ### Removed
 ### Fixed
 - [Issue 1 : Test pin hole is too small ](https://github.com/suikan4github/Akashi-02/issues/1)
+- [Issue 3 : Update footprint ](https://github.com/suikan4github/Akashi-02/issues/3)
 
 ### Security
 ### Known Issue
