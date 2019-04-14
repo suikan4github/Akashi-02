@@ -35,3 +35,4 @@ Initial release.
 
 [Unreleased]: https://github.com/suikan4github/Akashi-02/compare/v1.0.1...develop
 [1.0.1]: https://github.com/suikan4github/Akashi-02/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/suikan4github/Akashi-02/compare/v1.0.0...v0.0.0
