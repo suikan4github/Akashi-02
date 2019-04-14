@@ -15,6 +15,7 @@ Record of the modification in project development.
 
 ### Added
 ### Changed
+-[Issue 2 : Copy right is too small ](https://github.com/suikan4github/Akashi-02/issues/2)
 
 ### Deprecated
 ### Removed
