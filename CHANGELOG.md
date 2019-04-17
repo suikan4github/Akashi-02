@@ -22,6 +22,7 @@ Record of the modification in project development.
 ### Fixed
 - [Issue 1 : Test pin hole is too small ](https://github.com/suikan4github/Akashi-02/issues/1)
 - [Issue 3 : Update footprint ](https://github.com/suikan4github/Akashi-02/issues/3)
+- [Issue 4 : CODEC identification is wrong.](https://github.com/suikan4github/Akashi-02/issues/4)
 
 ### Security
 ### Known Issue
