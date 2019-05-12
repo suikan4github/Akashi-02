@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.0-060a0da~80~ubuntu16.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.2-f72e74a~84~ubuntu16.04.1)
 
   (general
     (thickness 1.6)
@@ -1223,17 +1223,17 @@
   (gr_line (start 121.92 79.375) (end 139.065 79.375) (layer F.SilkS) (width 0.12))
   (gr_line (start 121.92 74.93) (end 121.92 79.375) (layer F.SilkS) (width 0.12))
   (gr_poly (pts (xy 121.92 74.93) (xy 121.92 72.39) (xy 134.62 72.39) (xy 134.62 74.93)) (layer F.SilkS) (width 0.1))
-  (gr_text "UMB-SSM2603B\nmust use these holes" (at 121.92 77.47) (layer F.SilkS)
+  (gr_text "UMB-ADAU1361A\nmust use these holes" (at 121.92 77.47) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (gr_text "UMB-ADAU1361A must use these holes" (at 139.7 108.585 90) (layer F.SilkS)
+  (gr_text "UMB-SSM2603B must use these holes" (at 139.7 108.585 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_poly (pts (xy 143.51 90.17) (xy 140.97 90.17) (xy 140.97 125.73) (xy 143.51 125.73)) (layer F.SilkS) (width 0.1))
   (gr_text :ADAU1361->SHORT (at 114.3 93.98 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
-  (gr_text "Akashi-02 v1.0.1\nCODEC Test board for Nucleo 144 \n(C) Seiichi Horie 2019\nhttps://github.com/suikan4github/Akashi-02" (at 130.175 128.27 -90) (layer B.SilkS) (tstamp 5C97D5C5)
+  (gr_text "Akashi-02 v1.0.2\nCODEC Test board for Nucleo 144 \n(C) Seiichi Horie 2019\nhttps://github.com/suikan4github/Akashi-02" (at 130.175 128.27 -90) (layer B.SilkS) (tstamp 5C97D5C5)
     (effects (font (size 1.5 1.5) (thickness 0.15)) (justify left mirror))
   )
 

@@ -10,6 +10,19 @@ Record of the modification in project development.
 ### Security
 ### Known Issue
 
+## [1.0.2] - 2019-05-12
+
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+- [Issue 4 : CODEC identification is wrong.](https://github.com/suikan4github/Akashi-02/issues/4)
+The previous fix was not engough
+
+### Security
+### Known Issue
+
 
 ## [1.0.1] - 2019-04-14
 
@@ -37,6 +50,7 @@ Initial release.
 ### Fixed
 ### Security
 
-[Unreleased]: https://github.com/suikan4github/Akashi-02/compare/v1.0.1...develop
+[Unreleased]: https://github.com/suikan4github/Akashi-02/compare/v1.0.2...develop
+[1.0.2]: https://github.com/suikan4github/Akashi-02/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/suikan4github/Akashi-02/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/suikan4github/Akashi-02/compare/v1.0.0...v0.0.0
