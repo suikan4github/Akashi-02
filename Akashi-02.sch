@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:Akashi-02-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Akashi-02 / Nucleo 144 CODEC board"
+Date "2019-10-26"
+Rev "2.0.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -23,30 +23,9 @@ I2C1_SDA
 Text Label 4650 3800 0    39   ~ 0
 I2C1_SCL
 Wire Wire Line
-	6150 3700 6650 3700
-Wire Wire Line
 	6150 3900 6450 3900
 Wire Wire Line
 	6150 4000 6350 4000
-Wire Wire Line
-	6150 4200 6650 4200
-Wire Wire Line
-	6150 4300 6450 4300
-Wire Wire Line
-	6150 3600 6250 3600
-Wire Wire Line
-	6250 3600 6250 4450
-$Comp
-L power:GND #PWR010
-U 1 1 5C986693
-P 6250 4450
-F 0 "#PWR010" H 6250 4200 50  0001 C CNN
-F 1 "GND" H 6255 4277 50  0000 C CNN
-F 2 "" H 6250 4450 50  0001 C CNN
-F 3 "" H 6250 4450 50  0001 C CNN
-	1    6250 4450
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5C987004
@@ -72,17 +51,6 @@ Wire Wire Line
 Connection ~ 4900 4300
 Wire Wire Line
 	4900 4300 4900 4550
-$Comp
-L Akashi-02-rescue:+3.3V-kiritsubo #PWR06
-U 1 1 5C98AF7E
-P 4900 3200
-F 0 "#PWR06" H 4900 3050 50  0001 C CNN
-F 1 "+3.3V" H 4915 3373 50  0000 C CNN
-F 2 "" H 4900 3200 50  0000 C CNN
-F 3 "" H 4900 3200 50  0000 C CNN
-	1    4900 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5000 3500 4900 3500
 Wire Wire Line
@@ -94,41 +62,21 @@ Wire Wire Line
 	6450 3900 6450 3500
 Connection ~ 6450 3900
 Wire Wire Line
-	6650 3700 6650 3300
-Connection ~ 6650 3700
-Wire Wire Line
 	6350 4000 6850 4000
 Wire Wire Line
 	6450 3900 6850 3900
 Wire Wire Line
-	6650 3700 6850 3700
-Wire Wire Line
-	6350 3600 6850 3600
-Wire Wire Line
 	6450 3500 6850 3500
 Wire Wire Line
-	6650 3300 6850 3300
+	6650 3200 6850 3200
 Text Label 6750 4000 0    39   ~ 0
 SAI1_FS_A
 Text Label 6750 3900 0    39   ~ 0
 SAI1_SCK_A
-Text Label 6750 3500 0    39   ~ 0
-I2S1_CK
-Text Label 6700 4300 0    39   ~ 0
-SPI3_MOSI
-Text Label 6700 4200 0    39   ~ 0
-SPI_SS
-Text Notes 4900 5600 0    39   ~ 0
-* PC9 is SPI /CS signal.\n* SAI / IS2 are exclusive\n* SPI / I2C are exclusive\n* UMB-ADAU1361/UMB-SSM2603 are exclusive\n* Short JP1 if UMB-ADAU1361 exsit\n* SAI1_Block_A/I2S1:RX,  SAI1_Block_B/I2S2:TX
 Wire Wire Line
-	6150 3800 6550 3800
+	6900 3300 6550 3300
 Wire Wire Line
-	6900 3400 6550 3400
-Wire Wire Line
-	6550 3400 6550 3800
-Connection ~ 6550 3800
-Wire Wire Line
-	6550 3800 6850 3800
+	6550 3300 6550 3700
 Wire Wire Line
 	5000 3900 5000 3800
 Wire Wire Line
@@ -142,65 +90,27 @@ SCK
 Text Label 4650 3600 0    39   ~ 0
 MISO
 $Comp
-L Device:R R2
-U 1 1 5C9D2852
-P 6450 4650
-F 0 "R2" H 6500 4800 50  0000 L CNN
-F 1 "4.7k" V 6450 4550 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6380 4650 50  0001 C CNN
-F 3 "~" H 6450 4650 50  0001 C CNN
-	1    6450 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5C9D2DBB
-P 6650 4650
-F 0 "R3" H 6700 4800 50  0000 L CNN
-F 1 "4.7k" V 6650 4550 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6580 4650 50  0001 C CNN
-F 3 "~" H 6650 4650 50  0001 C CNN
-	1    6650 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR011
 U 1 1 5C9D38DC
-P 6450 4900
-F 0 "#PWR011" H 6450 4650 50  0001 C CNN
-F 1 "GND" H 6455 4727 50  0000 C CNN
-F 2 "" H 6450 4900 50  0001 C CNN
-F 3 "" H 6450 4900 50  0001 C CNN
-	1    6450 4900
+P 6250 4700
+F 0 "#PWR011" H 6250 4450 50  0001 C CNN
+F 1 "GND" H 6255 4527 50  0000 C CNN
+F 2 "" H 6250 4700 50  0001 C CNN
+F 3 "" H 6250 4700 50  0001 C CNN
+	1    6250 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 5C9D3C7B
-P 6650 4900
-F 0 "#PWR012" H 6650 4650 50  0001 C CNN
-F 1 "GND" H 6655 4727 50  0000 C CNN
-F 2 "" H 6650 4900 50  0001 C CNN
-F 3 "" H 6650 4900 50  0001 C CNN
-	1    6650 4900
+P 6450 4700
+F 0 "#PWR012" H 6450 4450 50  0001 C CNN
+F 1 "GND" H 6455 4527 50  0000 C CNN
+F 2 "" H 6450 4700 50  0001 C CNN
+F 3 "" H 6450 4700 50  0001 C CNN
+	1    6450 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6450 4800 6450 4900
-Wire Wire Line
-	6650 4800 6650 4900
-Wire Wire Line
-	6450 4500 6450 4300
-Connection ~ 6450 4300
-Wire Wire Line
-	6450 4300 6700 4300
-Wire Wire Line
-	6650 4500 6650 4200
-Connection ~ 6650 4200
-Wire Wire Line
-	6650 4200 6700 4200
-Text Label 6750 3400 0    39   ~ 0
-DAC_SD
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5C993664
@@ -230,119 +140,7 @@ F 3 "http://dsps.shop-pro.jp/?pid=82798273" H 5650 3700 60  0001 C CNN
 $EndComp
 Connection ~ 5000 3700
 Connection ~ 5000 3800
-$Comp
-L power:GND #PWR05
-U 1 1 5C9E0697
-P 4900 2350
-F 0 "#PWR05" H 4900 2100 50  0001 C CNN
-F 1 "GND" H 4905 2177 50  0000 C CNN
-F 2 "" H 4900 2350 50  0001 C CNN
-F 3 "" H 4900 2350 50  0001 C CNN
-	1    4900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR04
-U 1 1 5C9E0BBC
-P 4900 1200
-F 0 "#PWR04" H 4900 1050 50  0001 C CNN
-F 1 "+3.3V" H 4915 1373 50  0000 C CNN
-F 2 "" H 4900 1200 50  0001 C CNN
-F 3 "" H 4900 1200 50  0001 C CNN
-	1    4900 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 1200 4900 1350
-Wire Wire Line
-	4900 1450 5000 1450
-Wire Wire Line
-	5000 1350 4900 1350
-Connection ~ 4900 1350
-Wire Wire Line
-	4900 1350 4900 1450
-Wire Wire Line
-	5000 2050 4900 2050
-Wire Wire Line
-	4900 2050 4900 2150
-Wire Wire Line
-	5000 2150 4900 2150
-Connection ~ 4900 2150
-Wire Wire Line
-	4900 2150 4900 2350
-$Comp
-L power:+3.3V #PWR09
-U 1 1 5C9F02D9
-P 6250 1200
-F 0 "#PWR09" H 6250 1050 50  0001 C CNN
-F 1 "+3.3V" H 6265 1373 50  0000 C CNN
-F 2 "" H 6250 1200 50  0001 C CNN
-F 3 "" H 6250 1200 50  0001 C CNN
-	1    6250 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 1350 6150 1350
-Wire Wire Line
-	6250 1200 6250 1350
-Wire Wire Line
-	6150 1750 6850 1750
-Wire Wire Line
-	6150 1850 6850 1850
-Text Label 6500 1750 0    39   ~ 0
-SAI1_SCK_A
-Wire Wire Line
-	5000 1650 4700 1650
-Wire Wire Line
-	5000 1750 4700 1750
-Wire Wire Line
-	5000 1850 4700 1850
-Text Label 4700 1650 0    39   ~ 0
-SPI_SS
-Text Label 4700 1750 0    39   ~ 0
-I2C1_SDA
-Text Label 4700 1850 0    39   ~ 0
-I2C1_SCL
-NoConn ~ 6150 1450
 NoConn ~ 3250 -400
-Wire Wire Line
-	6150 2150 6400 2150
-Wire Wire Line
-	6850 2250 6400 2250
-$Comp
-L Codec_Modules:UMB-SSM2603B U1
-U 1 1 5C9F2E9B
-P 5550 1800
-F 0 "U1" H 5575 2515 50  0000 C CNN
-F 1 "UMB-SSM2603B" H 5575 2424 50  0000 C CNN
-F 2 "Codec_Modules:UMB-ADAU1361A" H 5550 1250 50  0001 C CNN
-F 3 "http://dsps.shop-pro.jp/?pid=91857895" H 5550 1250 50  0001 C CNN
-	1    5550 1800
-	1    0    0    -1  
-$EndComp
-Text Label 6750 3600 0    39   ~ 0
-I2S1_WS
-Text Label 6750 3300 0    39   ~ 0
-I2S2_SD
-Text Label 6750 3800 0    39   ~ 0
-SAI1_SD_A
-Text Label 6750 3700 0    39   ~ 0
-SAI1_SD_B
-Text Label 6550 1950 0    39   ~ 0
-SAI1_FS_A
-Text Label 6550 1850 0    39   ~ 0
-SAI1_SD_A
-Text Label 6550 2150 0    39   ~ 0
-SAI1_FS_B
-Text Label 6550 2050 0    39   ~ 0
-SAI1_SD_B
-Wire Wire Line
-	6400 2250 6400 2150
-Wire Wire Line
-	6150 1950 6850 1950
-Connection ~ 6400 2150
-Wire Wire Line
-	6400 2150 6850 2150
 Wire Wire Line
 	6200 6400 6200 6750
 $Comp
@@ -479,7 +277,7 @@ $EndComp
 Text Label 9650 2650 0    39   ~ 0
 DAC_SD
 Wire Wire Line
-	9800 2650 9600 2650
+	9800 2650 9650 2650
 $Comp
 L Device:R R4
 U 1 1 5C9BC6C7
@@ -604,7 +402,7 @@ Wire Wire Line
 Text Label 7800 2950 0    39   ~ 0
 I2S2_WS
 Wire Wire Line
-	7800 2850 8300 2850
+	7800 2850 8100 2850
 NoConn ~ 8800 3300
 NoConn ~ 8800 3400
 NoConn ~ 8800 3500
@@ -640,8 +438,6 @@ NoConn ~ 8800 2950
 NoConn ~ 8300 2750
 NoConn ~ 8300 2650
 NoConn ~ 8300 2550
-NoConn ~ 8300 2450
-NoConn ~ 8300 2350
 NoConn ~ 8300 2050
 Wire Wire Line
 	9700 1550 9700 1650
@@ -665,28 +461,6 @@ Wire Wire Line
 	9700 1500 9700 1550
 Wire Wire Line
 	9450 1500 9450 1650
-$Comp
-L Akashi-02-rescue:+3.3V-kiritsubo #PWR018
-U 1 1 5C9B820A
-P 9700 1500
-F 0 "#PWR018" H 9700 1350 50  0001 C CNN
-F 1 "+3.3V" H 9715 1673 50  0000 C CNN
-F 2 "" H 9700 1500 50  0000 C CNN
-F 3 "" H 9700 1500 50  0000 C CNN
-	1    9700 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Akashi-02-rescue:+3.3V-kiritsubo #PWR017
-U 1 1 5C9B7EC1
-P 9450 1500
-F 0 "#PWR017" H 9450 1350 50  0001 C CNN
-F 1 "+3.3V" H 9465 1673 50  0000 C CNN
-F 2 "" H 9450 1500 50  0000 C CNN
-F 3 "" H 9450 1500 50  0000 C CNN
-	1    9450 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R8
 U 1 1 5C9B1BF7
@@ -717,17 +491,8 @@ Wire Wire Line
 	8800 2150 9700 2150
 Wire Wire Line
 	9700 2150 9700 1950
-Text Label 7800 2350 0    39   ~ 0
-I2S1_CK
 Wire Wire Line
-	8100 2250 7800 2250
-Connection ~ 8100 2250
-Wire Wire Line
-	8100 2350 7800 2350
-Wire Wire Line
-	8100 2250 8100 2350
-Wire Wire Line
-	8300 2950 7800 2950
+	8300 2950 8100 2950
 Text Label 7800 2250 0    39   ~ 0
 I2S2_CK
 Text Label 7800 2850 0    39   ~ 0
@@ -743,11 +508,9 @@ I2C1_SDA
 Text Label 9000 2050 0    39   ~ 0
 I2C1_SCL
 Wire Wire Line
-	8800 2650 9300 2650
+	8800 2650 9250 2650
 Wire Wire Line
 	8800 2450 9300 2450
-Wire Wire Line
-	8300 2250 8100 2250
 Wire Wire Line
 	8300 2150 7800 2150
 Wire Wire Line
@@ -817,44 +580,10 @@ F 3 "~" H 8500 2450 50  0001 C CNN
 	1    8500 2450
 	1    0    0    -1  
 $EndComp
-Text Label 6550 2250 0    39   ~ 0
-I2S2_WS
-Text Label 9000 2550 0    39   ~ 0
-I2S1_SDI
-Wire Wire Line
-	8800 2550 9300 2550
-Wire Wire Line
-	6850 2350 6300 2350
-Wire Wire Line
-	6300 2350 6300 2050
-Wire Wire Line
-	6150 2050 6300 2050
-Wire Wire Line
-	6300 2050 6850 2050
-Connection ~ 6300 2050
-Text Label 6550 2350 0    39   ~ 0
-I2S1_SDI
-Wire Wire Line
-	2850 2550 3850 2550
 Text Label 3100 4400 0    39   ~ 0
 SAI1_SCK_B
 Wire Wire Line
-	3900 4450 3900 4600
-Wire Wire Line
 	2850 4000 3100 4000
-Wire Wire Line
-	3900 4000 3900 4150
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5CA4E689
-P 3900 4300
-F 0 "JP1" V 3854 4368 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 3945 4368 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3900 4300 50  0001 C CNN
-F 3 "~" H 3900 4300 50  0001 C CNN
-	1    3900 4300
-	0    1    1    0   
-$EndComp
 Text Label 3100 3900 0    39   ~ 0
 WS_INT
 Text Label 3350 4600 0    39   ~ 0
@@ -888,45 +617,10 @@ NoConn ~ 2850 2950
 NoConn ~ 2850 2850
 NoConn ~ 2850 2750
 NoConn ~ 2850 2250
-Text Label 3750 2550 0    39   ~ 0
-MISO
-Text Label 3750 2450 0    39   ~ 0
-SCK
-Wire Wire Line
-	3650 2450 3850 2450
-$Comp
-L Device:R R1
-U 1 1 5C9C3E3B
-P 3500 2450
-F 0 "R1" V 3450 2600 50  0000 C CNN
-F 1 "33" V 3500 2450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3430 2450 50  0001 C CNN
-F 3 "~" H 3500 2450 50  0001 C CNN
-	1    3500 2450
-	0    1    1    0   
-$EndComp
-Text Label 2950 2350 0    39   ~ 0
-SPI_SS
-Wire Wire Line
-	2850 2350 3350 2350
-Text Label 2950 2650 0    39   ~ 0
-SPI3_MOSI
-Text Label 2950 2550 0    39   ~ 0
-SPI3_MISO
-Text Label 2950 2450 0    39   ~ 0
-SPI3_SCK
-Text Label 3350 4300 0    39   ~ 0
-SAI1_SD_B
-Text Label 3350 4200 0    39   ~ 0
-SAI1_SD_A
 Text Label 3350 4100 0    39   ~ 0
 SAI1_SCK_A
 Text Label 3350 4000 0    39   ~ 0
 SAI1_FS_A
-Wire Wire Line
-	2850 2450 3350 2450
-Wire Wire Line
-	2850 2650 3350 2650
 Wire Wire Line
 	3100 4100 3350 4100
 Connection ~ 3100 4100
@@ -974,17 +668,6 @@ F 3 "" H 3000 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Akashi-02-rescue:+3.3V-kiritsubo #PWR01
-U 1 1 5C963AC5
-P 2200 1950
-F 0 "#PWR01" H 2200 1800 50  0001 C CNN
-F 1 "+3.3V" H 2215 2123 50  0000 C CNN
-F 2 "" H 2200 1950 50  0000 C CNN
-F 3 "" H 2200 1950 50  0000 C CNN
-	1    2200 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5C96327F
 P 2200 4850
@@ -1027,4 +710,223 @@ Connection ~ 3100 4000
 Wire Wire Line
 	3100 4000 3900 4000
 NoConn ~ 2850 4700
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5DB2F782
+P 4900 3200
+F 0 "#PWR0101" H 4900 3050 50  0001 C CNN
+F 1 "+3.3V" H 4915 3373 50  0000 C CNN
+F 2 "" H 4900 3200 50  0001 C CNN
+F 3 "" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5DB30629
+P 2200 1950
+F 0 "#PWR0102" H 2200 1800 50  0001 C CNN
+F 1 "+3.3V" H 2215 2123 50  0000 C CNN
+F 2 "" H 2200 1950 50  0001 C CNN
+F 3 "" H 2200 1950 50  0001 C CNN
+	1    2200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5DB30FB7
+P 9450 1500
+F 0 "#PWR0103" H 9450 1350 50  0001 C CNN
+F 1 "+3.3V" H 9465 1673 50  0000 C CNN
+F 2 "" H 9450 1500 50  0001 C CNN
+F 3 "" H 9450 1500 50  0001 C CNN
+	1    9450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5DB3169C
+P 9700 1500
+F 0 "#PWR0104" H 9700 1350 50  0001 C CNN
+F 1 "+3.3V" H 9715 1673 50  0000 C CNN
+F 2 "" H 9700 1500 50  0001 C CNN
+F 3 "" H 9700 1500 50  0001 C CNN
+	1    9700 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6150 3600
+Wire Wire Line
+	8800 2550 9300 2550
+Text Label 9000 2550 0    39   ~ 0
+I2S1_SDI
+NoConn ~ 2850 2350
+NoConn ~ 2850 2450
+NoConn ~ 2850 2550
+NoConn ~ 2850 2650
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5DB3AF9A
+P 9450 2850
+F 0 "JP1" H 9450 2750 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 9450 3000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9450 2850 50  0001 C CNN
+F 3 "~" H 9450 2850 50  0001 C CNN
+	1    9450 2850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9600 2850 9650 2850
+Wire Wire Line
+	9650 2850 9650 2650
+Connection ~ 9650 2650
+Wire Wire Line
+	9650 2650 9600 2650
+Wire Wire Line
+	9300 2850 9250 2850
+Wire Wire Line
+	9250 2850 9250 2650
+Connection ~ 9250 2650
+Wire Wire Line
+	9250 2650 9300 2650
+Text Label 3350 4200 0    39   ~ 0
+SAI1_SD_A
+Text Label 3350 4300 0    39   ~ 0
+SAI1_SD_B
+Text Label 6750 3700 0    40   ~ 0
+SAI1_SD_A
+Text Label 6750 3800 0    40   ~ 0
+SAI1_SD_B
+Wire Wire Line
+	8100 2950 8100 2850
+Connection ~ 8100 2850
+Wire Wire Line
+	8100 2850 8300 2850
+Text Label 6750 3600 0    40   ~ 0
+I2S1_WS
+Text Label 6750 3500 0    40   ~ 0
+I2S1_CK
+Text Label 6750 3300 0    40   ~ 0
+DAC_SD
+Text Label 6750 3200 0    40   ~ 0
+I2S2_SD
+Wire Wire Line
+	6650 3200 6650 3100
+Wire Wire Line
+	6650 3100 6850 3100
+Connection ~ 6650 3200
+Text Label 6750 3100 0    40   ~ 0
+I2S1_SDI
+Wire Wire Line
+	3900 4000 3900 4600
+Text Notes 9950 2900 0    50   ~ 0
+SAI : R4=Remove, JP1=Open\nI2S : R4=Remove, JP1=SHORT\nBOTH : R4=Install, JP1=Open
+Wire Wire Line
+	6150 3800 6550 3800
+Wire Wire Line
+	6350 3600 6650 3600
+Wire Wire Line
+	6650 3600 6850 3600
+Connection ~ 6650 3700
+Wire Wire Line
+	6650 3700 6850 3700
+Wire Wire Line
+	6550 3700 6550 3800
+Connection ~ 6550 3800
+Wire Wire Line
+	6550 3800 6850 3800
+Wire Wire Line
+	6150 3700 6650 3700
+Wire Wire Line
+	6650 3200 6650 3700
+Wire Wire Line
+	6450 3500 6450 3400
+Wire Wire Line
+	6450 3400 6900 3400
+Connection ~ 6450 3500
+Text Label 6750 3400 0    40   ~ 0
+I2S2_CK
+Wire Wire Line
+	7800 2250 8300 2250
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5DB560E8
+P 6800 4300
+F 0 "JP5" H 6800 4200 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6800 4450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6800 4300 50  0001 C CNN
+F 3 "~" H 6800 4300 50  0001 C CNN
+	1    6800 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5DB61FF5
+P 6450 4500
+F 0 "JP2" H 6400 4600 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" H 6450 4614 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6450 4500 50  0001 C CNN
+F 3 "~" H 6450 4500 50  0001 C CNN
+	1    6450 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP4
+U 1 1 5DB62E5D
+P 6250 4500
+F 0 "JP4" H 6200 4600 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" H 6250 4614 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 6250 4500 50  0001 C CNN
+F 3 "~" H 6250 4500 50  0001 C CNN
+	1    6250 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 4200 6450 4200
+Wire Wire Line
+	6150 4300 6250 4300
+Wire Wire Line
+	6250 4300 6250 4350
+Connection ~ 6250 4300
+Wire Wire Line
+	6250 4300 6650 4300
+Wire Wire Line
+	6450 4350 6450 4200
+Connection ~ 6450 4200
+Wire Wire Line
+	6450 4200 6650 4200
+Wire Wire Line
+	6950 4200 7100 4200
+Wire Wire Line
+	6950 4300 7100 4300
+Wire Wire Line
+	8300 2450 7800 2450
+Wire Wire Line
+	8300 2350 7800 2350
+Text Label 7800 2450 0    40   ~ 0
+ADDR0
+Text Label 7800 2350 0    40   ~ 0
+ADDR1
+Wire Wire Line
+	6250 4700 6250 4650
+Wire Wire Line
+	6450 4700 6450 4650
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5DB54BF6
+P 6800 4200
+F 0 "JP3" H 6800 4300 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6800 4350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6800 4200 50  0001 C CNN
+F 3 "~" H 6800 4200 50  0001 C CNN
+	1    6800 4200
+	-1   0    0    -1  
+$EndComp
+Text Label 7000 4200 0    40   ~ 0
+ADDR0
+Text Label 7000 4300 0    40   ~ 0
+ADDR1
+Text Notes 5950 5300 0    40   ~ 0
+JP5    JP4   JP3    JP2   : I2C ADRS\nOPEN  CLOSE OPEN  CLOSE : 0x38\nCLOSE OPEN  CLOSE OPEN  : Prg Ctrl\nPrg Ctrl : I2C Address = 0x38+PB12:PA15
+Text Notes 3700 5050 0    39   ~ 0
+* SAI / IS2 are exclusive\n* SAI1_Block_A/I2S2:RX,  SAI1_Block_B/I2S1:TX
 $EndSCHEMATC

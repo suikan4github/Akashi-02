@@ -1,4 +1,4 @@
-update=2019年04月15日 07時35分29秒
+update=2019年10月25日 07時34分35秒
 version=1
 last_client=kicad
 [general]
@@ -77,7 +77,7 @@ PageLayoutDescrFile=
 PlotDirectoryName=docs/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1

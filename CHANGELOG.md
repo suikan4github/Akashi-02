@@ -4,6 +4,11 @@ Record of the modification in project development.
 
 ### Added
 ### Changed
+- [Issue 5 : U2 Pin4 is set ground by mistake](https://github.com/suikan4github/Akashi-02/issues/5)
+- [Issue 6 : Remove SSM2603 support](https://github.com/suikan4github/Akashi-02/issues/6)
+- [Issue 7 : Remove SPI support](https://github.com/suikan4github/Akashi-02/issues/7)
+- [Issue 8 : Extend the board ](https://github.com/suikan4github/Akashi-02/issues/8)
+
 ### Deprecated
 ### Removed
 ### Fixed
