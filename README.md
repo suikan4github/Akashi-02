@@ -28,16 +28,18 @@ By default, the I2C device address are fixed as 0x38 ( 7bit address ). If you wa
 - J5 : Close by soldering.
 
 By above modification , the address can be controled by GPIO PB12 and PA15. The address can be determined as following :
+
 | b6 | b5 | b4 | b3 | b2 | b1    | b0   |
 -----|----|----|----|----|-------|---- 
 | 0  | 1  | 1  | 1  | 0  | PB12  | PA15 |
 
 ## Audio Port selection
 This board allow to use SAI or I2S ( Both simplex and duplex). By default, Only SAI connection is allowed. The configuration of the board is as following : 
-| Port | JP1     | JP6     | R5  |
--------|---------|---------|-
-| SAI  | Opened  | Closed  | Removed  |
-| I2S  | Closed  | Opened  | Removed  |
+
+| Port | JP1     | JP6     | R5        |
+-------|---------|---------|-----------
+| SAI  | Opened  | Closed  | Removed   |
+| I2S  | Closed  | Opened  | Removed   |
 | Both | Opened  | Closed  | Installed |
 
 "Both" is not recommended.
