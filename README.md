@@ -21,7 +21,7 @@ The schematics [can be donwloaded](docs/Akashi-02.pdf) as PDF format.
 ![Pin Configurations](docs/pin-config.png)
 
 ## I2C address
-By default, the I2C device address are fixed as 0x38 ( 7bit address ). If you want to change, you should modify the short bridge J2-J5 as following :
+By default, the I2C device address are fixed as ***0x38*** ( 7bit address ). If you want to change, you should modify the short bridge J2-J5 as following :
 - J2 : Open by cutting the pattern.
 - J3 : Close by soldering.
 - J4 : Open by cutting the pattern.
@@ -34,7 +34,7 @@ By above modification , the address can be controled by GPIO PB12 and PA15. The 
 | 0  | 1  | 1  | 1  | 0  | PB12  | PA15 |
 
 ## Audio Port selection
-This board allow to use SAI or I2S ( Both simplex and duplex). By default, Only SAI connection is allowed. The configuration of the board is as following : 
+This board allow to use SAI or I2S ( Both simplex and duplex). By default, ***Only SAI connection*** is allowed. The configuration of the board is as following : 
 
 | Port | JP1     | JP6     | R5        |
 -------|---------|---------|-----------
