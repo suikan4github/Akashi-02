@@ -7,6 +7,9 @@ This board is designed to test the audio interface functionality of the STM32 se
 - Simplex I2S peripheral (STM32F722, F746)
 - Duplex I2S peripheral (STM32H743)
 
+![Image](docs/board.jpg)
+
+
 These functionalities are tested with following codec board as with I2C control line. 
 - [UMB-ADAU1361A](http://dsps.shop-pro.jp/?pid=82798273)
 
