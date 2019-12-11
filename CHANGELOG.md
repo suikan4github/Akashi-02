@@ -8,6 +8,8 @@ Record of the modification in project development.
 - [Issue 6 : Remove SSM2603 support](https://github.com/suikan4github/Akashi-02/issues/6)
 - [Issue 7 : Remove SPI support](https://github.com/suikan4github/Akashi-02/issues/7)
 - [Issue 8 : Extend the board ](https://github.com/suikan4github/Akashi-02/issues/8)
+- [Issue 9 : Modify readme ](https://github.com/suikan4github/Akashi-02/issues/9)
+
 
 ### Deprecated
 ### Removed

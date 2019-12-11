@@ -27,7 +27,7 @@ By default, the I2C device address are fixed as ***0x38*** ( 7bit address ). If 
 - J4 : Open by cutting the pattern.
 - J5 : Close by soldering.
 
-By above modification , the address can be controled by GPIO PB12 and PA15. The address can be determined as following :
+By above modification , the address can be controlled by GPIO PB12 and PA15. The address can be determined as following :
 
 | b6 | b5 | b4 | b3 | b2 | b1    | b0   |
 -----|----|----|----|----|-------|---- 
@@ -45,9 +45,11 @@ This board allow to use SAI or I2S ( Both simplex and duplex). By default, ***On
 "Both" is not recommended.
 
 ## Usage
-The test program works with this board is published as [murasaki_test_audio](https://github.com/suikan4github/murasaki_test_audio) project. 
+The sample programs are published as [murasaki_samples_audio](https://github.com/suikan4github/murasaki_samples_audio) repositories. 
 
-If you develop a software working with this board, that software has to follow the pin configuration below. Note that pin marked as "-" have to be left input state. Otherwise, the board might be broken. 
+ To use these repository, follow the sequence :
+ 1. Clone the murasaki_samples_audio repository
+ 1. Import to CubeIDE
 
 
 ## License
