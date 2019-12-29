@@ -10,6 +10,18 @@ Record of the modification in project development.
 ### Security
 ### Known Issue
 
+## [2.0.1] - 2019-12-29
+
+### Added
+### Changed
+### Deprecated
+### Removed
+### Fixed
+- [Issue 11 : Make external library access to local ](https://github.com/suikan4github/Akashi-02/issues/11)
+
+### Security
+### Known Issue
+
 ## [2.0.0] - 2019-12-12
 SSM2603 support is dropped. 
 
@@ -67,7 +79,8 @@ Initial release.
 ### Fixed
 ### Security
 
-[Unreleased]: https://github.com/suikan4github/Akashi-02/compare/v2.0.0...develop
+[Unreleased]: https://github.com/suikan4github/Akashi-02/compare/v2.0.1...develop
+[2.0.1]: https://github.com/suikan4github/Akashi-02/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/suikan4github/Akashi-02/compare/v1.0.2...v2.0.0
 [1.0.2]: https://github.com/suikan4github/Akashi-02/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/suikan4github/Akashi-02/compare/v1.0.0...v1.0.1

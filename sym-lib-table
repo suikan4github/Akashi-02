@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Codec_Modules)(type Legacy)(uri /home/takemasa/shared_foo/kicad/github/Suikan-KiCad-Libraries/Libraries/Codec_Modules.lib)(options "")(descr ""))
+  (lib (name Codec_Modules)(type Legacy)(uri /home/takemasa/shared_foo/kicad/github/Suikan-KiCad-Libraries/Libraries/Codec_Modules.lib)(options "")(descr "")(disabled))
+  (lib (name Codec_Modules_Local)(type Legacy)(uri Suikan-KiCad-Libraries/Libraries/Codec_Modules.lib)(options "")(descr ""))
 )

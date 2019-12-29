@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name Codec_Modules)(type KiCad)(uri /home/takemasa/shared_foo/kicad/github/Suikan-KiCad-Libraries/Footprints/Codec_Modules.pretty)(options "")(descr ""))
+  (lib (name Codec_Modules)(type KiCad)(uri /home/takemasa/shared_foo/kicad/github/Suikan-KiCad-Libraries/Footprints/Codec_Modules.pretty)(options "")(descr "")(disabled))
+  (lib (name Codec_Modules_local)(type KiCad)(uri Suikan-KiCad-Libraries/Footprints/Codec_Modules.pretty)(options "")(descr ""))
 )
