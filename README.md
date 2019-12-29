@@ -48,6 +48,13 @@ This board allow to use SAI or I2S ( Both simplex and duplex). By default, ***On
 "Both" is not recommended.
 
 ## Usage
+To clone this project, follow :
+```
+git clone repository-of-this-project
+git submodule update
+```
+
+
 The sample programs are published as [murasaki_samples_audio](https://github.com/suikan4github/murasaki_samples_audio) repositories. 
 
  To use these repository, follow the sequence :
