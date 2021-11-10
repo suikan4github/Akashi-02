@@ -14,7 +14,7 @@ These functionalities are tested with following codec board as with I2C control 
 - [UMB-ADAU1361A](http://dsps.shop-pro.jp/?pid=82798273)
 
 ## Development
-- [KiCad 5.1](http://kicad-pcb.org/blog/2019/03/KiCad-5.1.0-Release/)
+- [KiCad 5.1](http://kicad.org/blog/2019/03/KiCad-5.1.0-Release/)
 - [Nucleo F722ZE](https://www.st.com/en/evaluation-tools/nucleo-f722ze.html)
 - [Nucleo F746ZG](https://www.st.com/ja/evaluation-tools/nucleo-f746zg.html)
 - [Nucleo H743ZI](https://www.st.com/ja/evaluation-tools/nucleo-h743zi.html)
